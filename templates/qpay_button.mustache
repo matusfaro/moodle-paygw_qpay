@@ -1,0 +1,12 @@
+<div class="qpaypaymentmodal">
+    {{#error}}<div class="qpayerror">{{.}}</div>{{/error}}
+    {{#qrimg}}<img class="qpayqr" src="data:image/png;base64, {{{.}}}" alt="QPay QR code" />{{/qrimg}}
+    <div class="qpayitems">
+        {{#urls}}
+            <a class="qpayurl" href="{{link}}">
+                <img class="qpayurlimg" alt="{{name}}" src="{{logo}}" />
+                {{description}}
+            </a>
+        {{/urls}}
+    </div>
+</div>

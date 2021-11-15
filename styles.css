@@ -1,0 +1,27 @@
+.core_payment_gateways_modal .qpay .icon {
+    height: 40px;
+    width: auto;
+}
+
+.qpaypaymentmodal {
+    text-align: center;
+}
+
+.qpaypaymentmodal .qpaylogo .icon {
+    margin-top: 10px;
+    height: 40px;
+    width: auto;
+}
+
+.qpayitems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+    margin: auto;
+    width: 180px;
+}
+
+.qpayurlimg {
+    max-width: 40px;
+}
