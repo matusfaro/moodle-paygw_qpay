@@ -80,6 +80,7 @@ class qpay_helper
         $neworder->qrimg = $response->qr_image;
         $neworder->qrtext = $response->qr_text;
         $neworder->urls = json_encode($response->urls);
+        $neworder->invoiceid = $response->invoice_id;
         $DB->update_record('paygw_qpay', $neworder);
 
         return $neworder;
@@ -95,7 +96,7 @@ class qpay_helper
      */
     public static function check_payment($config_gateway, $order)
     {
-        $invoice_status = qpay_api::get_invoice_status($config_gateway, $order->itemid);
+        $invoice_status = qpay_api::get_invoice_status($config_gateway, $order->invoiceid);
         return $invoice_status->paid_amount >= $order->amount;
     }
 

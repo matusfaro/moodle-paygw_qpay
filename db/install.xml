@@ -19,6 +19,7 @@
         <FIELD NAME="qrimg" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="urls" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
         <FIELD NAME="qrtext" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="invoiceid" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
